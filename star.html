@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="star.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star rating</title>
+</head>
+<body>
+    <div class="home">
+        <a href="https://alli-mubarak.github.io/Init.Projects/">Go back</a>
+    </div>
+   <div class="container">
+    <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+    </div>
+    <div class="widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class='bx bxs-star'></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class='bx bxs-star'></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class='bx bxs-star'></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class='bx bxs-star' ></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class='bx bxs-star'></label>
+
+        <form action="#">
+            <header></header>
+            <div class="text-area">
+                <textarea cols="30" placeholder="Describe your experience..."></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+   </div> 
+<script>
+    const btn = document.querySelector("button");
+    const post = document.querySelector(".post");
+    const widget = document.querySelector(".widget");
+    const edit = document.querySelector(".edit");
+
+    btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        edit.onclick = ()=>{
+        widget.style.display = "block";
+        post.style.display = "none";
+    }
+    return false;
+    }
+</script>
+</body>
+</html>

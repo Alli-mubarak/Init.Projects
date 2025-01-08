@@ -1,0 +1,40 @@
+body {
+    color:brown;
+    margin:0;
+    background: aliceblue;
+    font-family:courier;
+}
+.container{
+    height:250px;
+    text-align:center;
+    background:burlywood;
+    border-radius:25px;
+    padding:30px;
+    border:2px solid aliceblue;
+    font-family:courier;
+    width: 400px;
+    margin: 30px auto;
+}
+input,button{
+    font-size:1.2rem;
+    border-radius:10px;
+    border:1px solid ;
+    padding: 10px;
+    outline:none;
+    font-family:monospace;
+}
+img{
+    border-radius:5px;
+}
+.home{
+    text-align: center;
+}
+.home a{
+    text-decoration: none;
+    color: #000;
+}
+.home a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+

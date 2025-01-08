@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Translator app</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="trans.css">
+</head>
+<body>
+    <div class="home">
+        <a href="https://alli-mubarak.github.io/Init.Projects/"> Go back</a>
+    </div>
+ <div class="translator-container">
+    <div class="language-buttons">
+        <button id="englishBtn" class="lang-btn active" onclick="setLanguage('en')">Arabic</button>
+        <div id="switchIcon" class="icon-btn" onclick="switchTranslation()"><i class="fas fa-exchange-alt"></i></div>
+        <button id="ArabicBtn" class="lang-btn active" onclick="setLanguage('ar')">English</button>
+    </div>
+    <textarea id="inputText" placeholder="Enter English text....."></textarea>
+    <div class="icon-btn" onclick="copyText('inputText')"><i class="fas fa-copy"></i></div>
+    <div class="icon-btn" onclick="speakText(document.getElementById('inputText').value,'en-US')"><i class="fas fa-volume-up"></i></div>
+    <div class="icon-btn" onclick="clearInput()"><i class="fas fa-times"></i></div>
+
+    <button id="translateBtn" onclick="translateText()">Translate</button>
+
+    <div class="output-container">
+        <textarea id="outputText" placeholder="Translated text will appear here..." readonly></textarea>
+        <div class="icon-btn" onclick="copyText('outputText')"><i class="fas fa-copy"></i></div>
+        <div class="icon-btn" onclick="speakText(document.getElementById('outputText').value,'ar-SA')"><i class="fas fa-volume-up"></i></div>
+    </div>
+</div>
+<script src="trans.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    margin: 0; padding: 0;
+    background: #000;
+    color: #fff;
+}
+.container{
+    text-align: center;
+}
+.projects{
+    text-align: left;
+    width: 90%;
+    margin: 50px auto;
+}
+.projects a{
+    color: #fff;
+    text-decoration: none;
+}
+.projects a:hover{
+    text-decoration: underline;
+}
+.extras span{
+    cursor: pointer;
+    color: #aaa;
+}
+.extras span:hover{
+    color: #fff;
+}

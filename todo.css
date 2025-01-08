@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+.to-do-container {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background: #023020;
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+    height: 100%; width: 100%;
+    left: 100%;
+    transition: .5s;
+}
+.t-closer{
+    height: 30px;
+    display: flex;
+}
+.t-box{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: auto;
+    position: relative;
+    cursor: pointer;
+}
+.t-box span{
+    position: absolute;
+    width: 30px;
+    left: 0; top: 15px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.t-box span:nth-child(1){
+    transform: rotate(-45deg);
+}
+.t-closer .menu{
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+}
+.t-closer .menu span{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    left: 10px;
+}
+.t-closer .menu span:nth-child(2){
+    top: 10px;
+}
+.t-closer .menu span:nth-child(3){
+    top: 20px;
+}
+.add-todos{
+    width: 360px;
+    margin:40px auto 20px;
+    box-shadow: 0 0 10px #1b1212;
+    padding: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    z-index: 10;
+    position: absolute;
+    left: calc(100% - 430px);
+    background: #023030;
+    display: none;
+  }
+  .add-todos input{
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0,0.5);
+    outline: none;
+    color: aliceblue;
+    border: none;
+    font-size: 15px;
+  }
+  .add-todos button{
+    cursor: pointer;
+    background: rgba(0, 0, 0,0.5);
+    color: #f1faee;
+    padding:3px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 75px 10px 30px;
+  background: #023030;
+  border: ridge 7px #1b1212 ;
+  width: 300px;
+  margin: auto ;
+  position: relative;
+  overflow: hidden;
+  transition: .4s;
+}
+.todo-list .todo-list__title {
+  padding: 3px 6px;
+  color: #f1faee;
+  background-color: #264456;
+}
+.todo-list .todo-list__label {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 25px;
+  font-family: Lato, sans-serif;
+  color: #f1faee;
+  cursor: pointer;
+  width: 100%;
+  justify-content: flex-start;
+}
+.todo-list .todo-list__label input[type=checkbox] {
+  opacity: 0;
+  width: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.todo-list .todo-list__label input[type=checkbox] + .check {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f1faee;
+  transition: 0.2s;
+}
+.todo-list .todo-list__label input[type=checkbox]:checked + .check {
+  width: 25px;
+  height: 15px;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+  border-color:lightskyblue;
+}
+.todo-list .todo-list__label input[type=checkbox] ~ span {
+  position: relative;
+  left: 40px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.todo-list .todo-list__label input[type=checkbox] ~ span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f1faee;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.todo-list .todo-list__label input[type=checkbox]:checked ~ span {
+  color: #585b57;
+}
+.todo-list .todo-list__label input[type=checkbox]:checked ~ span::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}

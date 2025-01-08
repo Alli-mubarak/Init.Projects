@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <h3>PROJECTS</h3>
+        <div class="projects">
+            <ul>
+                <li><a href="#"> Analog Clock</a></li>
+                <li><a href="#">Application form</a></li>
+                <li><a href="#">Atm card</a></li>
+                <li><a href="#">Battery</a></li>
+                <li><a href="#">Coming soon Page</a></li>
+                <li><a href="#">Digital clock and Date</a></li>
+                <li><a href="#"> Atm form</a></li>
+                <li><a href="#">Login form</a></li>
+                <li><a href="#">Login form 2</a></li>
+                <li><a href="#"> Password generator</a></li>
+                <li><a href="#">Solar system</a></li>
+                <li><a href="#">Star rating</a></li>
+                <li><a href="#">Stopwatch</a></li>
+                <li><a href="#">Text-to-speech</a></li>
+                <li><a href="#">To-do list</a></li>
+                <li> <a href="#">Translator</a></li>
+            </ul>
+
+        </div>
+        <div class="extras">
+            <span onclick="opener()">Use Calculator</span><br><br>
+            <span onclick="openToDo()">Open To-do list</span>
+        </div>
+        <div class="calculator-container">
+            <div class="closer" onclick="closer()">
+                <div class="box"><span></span><span></span></div>
+            </div>
+            <div class="calculator">
+                <input readonly title="display"><br>
+                <button onclick="clr()">C</button>
+                <button onclick="show('7')" class="sp">7</button>
+                <button onclick="show('8')" class="sp">8</button>
+                <button onclick="show('9')">9</button><br>
+                <button onclick="show('+')">+</button>
+                <button onclick="show('4')" class="sp">4</button>
+                <button onclick="show('5')" class="sp">5</button>
+                <button onclick="show('6')">6</button><br>
+                <button onclick="show('-')" class="thin">- </button>
+                <button onclick="show('1')">1</button>
+                <button onclick="show('2')" class="sp">2</button>
+                <button onclick="show('3')" class="sp">3</button><br>
+                <button onclick="show('*')">x</button>
+                <button onclick="show('.')" class="thin">. </button>
+                <button onclick="show('**')">^</button>
+                <button onclick="del()">del</button><br>
+                <button onclick="show('/')" class="thin">/</button>
+                <button onclick="show('00')">00</button>
+                <button onclick="show('0')">0</button>
+                <button onclick="calc()">=</button>
+            </div>
+            </div>
+        <div class="to-do-container">
+            <div class="t-closer" >
+                <div class="t-box" onclick="closeToDo()"><span></span><span></span></div>
+                <div class="menu" onclick="menu()"><span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="add-todos">
+                <label for="new-todo">Add To-do</label><br>
+                <input type="text" id="new-todo">
+                <button type="button" onclick="adder()">Add</button>
+            </div>
+            <form>
+                <fieldset class="todo-list">
+                    <legend class="todo-list__title">To-do list</legend>
+                    <label class="todo-list__label" onclick="remove(this)">
+                        <input type="checkbox" name="" id="">
+                        <i class="check"></i>
+                        <span>Attend meeting</span>
+                    </label>
+                    <label class="todo-list__label" onclick="remove(this)">
+                        <input type="checkbox" name="" id="">
+                        <i class="check"></i>
+                        <span>Complete assignment</span>
+                    </label>
+                    <label class="todo-list__label" onclick="remove(this)">
+                        <input type="checkbox" name="" id="">
+                        <i class="check"></i>
+                        <span>Finish design for new website</span>
+                    </label>
+                    <label class="todo-list__label" onclick="remove(this)">
+                        <input type="checkbox" name="" id="">
+                        <i class="check"></i>
+                        <span>Go to gym</span>
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+            
+    </div>
+<script src="calculator.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>

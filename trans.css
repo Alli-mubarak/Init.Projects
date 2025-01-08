@@ -32,6 +32,7 @@ margin-top: 30px;
     padding: 4px;
     border-radius: 3px;
     border: outset 2px black;
+    cursor:pointer;
 }
 .icon-btn:active{
     border: transparent;
@@ -47,5 +48,6 @@ textarea{
 }
 button{
     padding: 5px;
+    cursor:pointer;
     border-radius: 3px;
 }

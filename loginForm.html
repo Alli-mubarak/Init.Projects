@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In / Sign Up</title>
+    <link rel="stylesheet" href="loginForm.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="sign In">
+            <form action="">
+                <h2>Login</h2>
+                <div class="inputs">
+                    <input type="text"  id="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="inputs">
+                    <input id="password" type="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember">
+                    <label >
+                        <input type="checkbox" class="bb" id="" >Remember me
+                    </label>
+                </div>
+                <button type="submit">Login</button>
+                    <div class="signUp-box">
+                        <p>Don't have an account? <a href="#" class="signUpLInk" onclick="signUp()">Sign up</a> </p>
+                    </div>
+            </form>
+        </div>
+
+        <div class="sign Up">
+            <form action="">
+                <h2>Sign up</h2>
+                <div class="inputs">
+                    <input id="u-name" type="text" required>
+                    <label for="u-name">Username</label>
+                </div>
+                <div class="inputs">
+                    <input id="email" type="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="inputs">
+                    <input id="pw" type="password" required>
+                    <label for="pw">Password</label>
+                </div>
+                
+                <div class="remember">
+                    <label >
+                        <input type="checkbox" class="bb" id="" >I agree to terms
+                        & conditions
+                    </label>
+                </div>
+                <button type="submit">Sign up</button>
+                    <div class="signUp-box">
+                        <p>Already have an account? <a href="#" class="signInLInk" onclick="signIn()">Sign in</a> </p>
+                    </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="home">
+        <a href="#"> Go back</a>
+      </div>
+    <script src="loginForm.js"></script>
+</body>
+</html>

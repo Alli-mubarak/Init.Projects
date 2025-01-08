@@ -1,0 +1,122 @@
+*{
+ font-family: sans-serif;
+}
+body{
+    margin: 0;padding: 0;
+    background: #000;
+}
+.container{
+    margin: 100px auto;
+    width: 250px;
+    height: 320px;
+    background: #000;
+    box-shadow: 0 0 40px dodgerblue;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.container:hover{
+    animation: changeColor 5s linear infinite;
+}
+@keyframes changeColor{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.container.active .sign.In{
+    transform: translateY(-325px);
+}
+.container.active .sign.Up{
+    transform: translateY(-325px);
+}
+.sign.Up{
+    position: absolute;
+    top: 335px;
+    left: 0;
+}
+h2{
+    color: #fff;
+    text-align: center;
+}
+.inputs{
+    position: relative;
+    margin: 20px 0;
+    border-bottom: solid 2px #fff;
+}
+.inputs label{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 5px;
+    font-size: 15px;
+    pointer-events: none;
+    color: #fff;
+    transition: .5s;
+}
+.inputs input{
+    width: 220px;
+    background: transparent;
+    color: #fff;
+    height: 30px;
+    border: none;outline: none;
+    padding: 0 5px;
+}
+.inputs input:focus~label,
+.inputs input:valid~label{
+    top: -5px;
+}
+.remember{
+    margin: -5px 0 15px -5px;
+}
+.remember input{
+    accent-color: dodgerblue;
+}
+.remember label{
+    color: #fff;
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px dodgerblue;
+    background: dodgerblue;
+    color: #000;
+}
+.signUp-box{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 12px;
+    color: #fff;
+}
+.signUp-box a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+}
+.signUp-box a:hover{
+    text-decoration: underline;
+}
+.home{
+    text-align: center;
+}
+.home a{
+    margin-left: 30px ;
+    text-decoration: none;
+    color: #fff;
+ }
+ .home a:hover{
+    text-decoration: underline;
+ }

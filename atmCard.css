@@ -1,0 +1,118 @@
+body{
+    background:lightblue;
+    margin:0;
+ }
+ .cust{
+    text-align:center;
+    font-family:monospace;
+    color:indigo;
+ }
+ .big{
+     perspective:1000px;
+     margin:150px 0 0 90px;
+     width: 300px;
+     margin: 50px auto;
+ }
+ .ct{
+     font-size:1rem;
+ }
+ .card{
+     position:relative;
+     width:300px;
+     height:200px;
+     transform-style:preserve-3d;
+     transition:transform 1s;
+     cursor:pointer;
+ }
+ .front,.back{
+     border-radius:20px;
+     border:1px solid white;
+     position: absolute;
+     width:100%;
+     height:100%;
+     backface-visibility:hidden;
+     background: dodgerblue ;
+ }
+ th,td{
+     border:solid 1px grey;
+     width:5px;
+     height:6px;
+     border-collapse: collapse;
+     background:yellow;
+ }
+ .small{
+     background:grey;
+     width:30px;
+     height:23px;
+     border-radius:5px;
+     padding:2px;
+     margin:20px 0 0 20px;
+ }
+ .visa{
+     font-weight:bold;
+     color:white;
+     font-family: sans-serif;
+     float:right;
+     margin:25px 30px 0 0;
+     font-size:2rem;
+ }
+ .bank{
+     font-weight:bold;
+     font-family:Times;
+     Color:yellow;
+     font-size:1.4rem;
+     margin:20px 20px;
+     font-family:Times;
+ }
+ .big:hover .card{
+     transform: rotateY(-180deg);
+ }
+ .try{
+     text-align:center;
+     font-family:monospace;
+     margin-top:10px;
+     color:whitesmoke;
+ }
+ .no{
+     font-size:1.7rem;
+ }
+ .back {
+    transform:rotateY(-180deg);
+ }
+ .black{
+     background:black;
+     width:100%;
+     height:20%;
+     margin:20px 0 20px 0;
+ }
+ .cvv{
+     background:white;
+     padding:10px 5px 10px 200px;
+     margin:0;
+ }
+ .val{
+     font-size:5px;
+     overflow:hidden;
+     margin:10px 0 10px 40%;
+     width:25px;
+ }
+ .name{
+     font-size:1.3rem;
+     color:white;
+ }
+ .exp{
+     font-size:20px;
+     width:11px;
+     margin-top:7px;
+ }
+ .valid{
+     text-align:center;
+     display:flex;
+ }
+ .home a{
+    margin-left: 30px ;
+    text-decoration: none;
+ }
+ .home a:hover{
+    text-decoration: underline;
+ }

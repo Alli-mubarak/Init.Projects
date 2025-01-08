@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background: url(v-oil.webp)  no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.wrapper{
+    background: rgb(0,0,0,0.7);
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    color: white;
+    padding: 100px 0;
+}
+.wrapper h1{
+    cursor: pointer;
+}
+form{
+    background: transparent;
+    text-align: center;
+    width: 300px;
+    border: 1px solid rgb(145, 143, 143);
+    border-radius: 10px;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    margin: auto;
+}
+.input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px ;
+}
+.input input{
+    border: 1px solid rgb(145, 143, 143);
+    outline: none;
+    border-radius: 40px;
+    background: transparent;
+    width: 90%;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    padding: 3px 10px;
+}
+input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.input i{
+   right: 12px;
+   top: 50%;
+   transform: translateY(-50%);
+   position: absolute;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 20px 0;
+}
+.remember label input{
+   accent-color: white;
+   margin-right: 4px;  
+}
+.remember a, .create p a{
+    color: white;
+    text-decoration: none;
+}
+.remember a:hover,.create p a:hover{
+    text-decoration: underline;
+}
+.create{
+    cursor: pointer;
+}
+.create p a{
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+.home{
+    text-align: center;
+    margin-top: 30px;
+}
+.home a{
+    margin-left: 30px ;
+    text-decoration: none;
+    color: #fff;
+ }
+ .home a:hover{
+    text-decoration: underline;
+ }

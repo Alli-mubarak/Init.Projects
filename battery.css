@@ -1,0 +1,55 @@
+body{
+    margin: 0; padding: 0;
+}
+.box{
+    margin: 50px auto;
+ width: 70%;
+ justify-items: center;
+}
+.container{
+ display:flex;
+ margin-bottom:20px;
+} 
+.battery{
+    margin:10px 0;
+    width:100px;
+    height:60px;
+    background:whitesmoke;
+    border-radius:10px;
+    display:flex;
+    border: 1px solid;
+}
+.one,.two,.three{
+    width:0;
+    height:80%;
+    background: green ;
+    margin: 5px 0.5px 0 5px;
+}
+.head{
+    width:10px;
+    height:40px;
+    background:grey;
+    border-radius:0 10px 10px 0;
+    margin: 20px 0;
+}
+button{
+    font-size:2rem;
+    cursor: pointer;
+}
+.home a{
+    margin-left: 30px ;
+    text-decoration: none;
+ }
+ .home a:hover{
+    text-decoration: underline;
+ }
+@media only screen and (max-width:600px){
+    body{
+        background-color: lightblue;
+    }
+}
+@media only screen and (min-width:601px) {
+    body{
+        background-color: lightgreen;
+    }
+}

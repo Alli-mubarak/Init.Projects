@@ -1,0 +1,34 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    margin:0;
+    background:aliceblue;
+}
+.clock-container{
+    width:70%;
+    margin:200px auto 50px;
+    border: 2px solid grey;
+    box-shadow:5px 5px lightblue;
+    border-radius:10px;
+    background:whitesmoke;
+    text-align: center;
+}
+.clock-container div{
+    border: 2px solid grey;
+    padding: 10px 30px;
+    margin:10px 30px;
+    font-size:3rem;
+    font-family: courier;
+    color: green;
+}
+.home{
+    text-align: center;
+}
+.home a{
+    margin-left: 30px ;
+    text-decoration: none;
+ }
+ .home a:hover{
+    text-decoration: underline;
+ }

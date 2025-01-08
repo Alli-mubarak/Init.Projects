@@ -1,0 +1,126 @@
+body{
+    --primary:lightblue;
+    --native:grey;
+    --hand:black;
+    --sec:aliceblue;
+}
+body.dark{
+   --primary:wheat;
+    --native: brown;
+    --hand: whitesmoke;
+    --sec: indigo;
+    cursor:pointer;
+}
+body{
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ display:flex;
+ background:var(--primary);
+ font-family: times;
+ margin:0;
+}
+.home{
+    text-align: left;
+    width: 100vw;
+}
+.home a{
+    margin-left: 30px;
+    color: black;
+}
+.day{
+    color:var(--native);
+    font-size:2rem;
+    margin:10px 0;
+    text-shadow:2px 2px black;
+    overflow:hidden;
+    height:38px;
+    width:250px;
+    margin-left:80px;
+}
+.big{
+    margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.small{
+    width:400px;
+    height:400px;
+    background:var(--native);
+    border-radius:50%;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+   display:flex;
+   position:relative;
+}
+label{
+    position:absolute;
+    inset:20px;
+    text-align:center;
+    transform: rotate(calc(var(--i)*(360deg/12)));
+    
+}
+label span{
+    display:inline-block;
+    font-size:30px;
+    font-weight:600;
+    color:var(--hand);
+    transform:rotate(calc(var(--i)*(-360deg/12)));
+}
+.hands{
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    display:flex;
+    height:12px;
+    width:12px;
+}
+.hands:before{
+    content:"";
+    position: absolute;
+    height:100%;
+    width:100%;
+    border:5px solid var(--sec);
+    border-radius:50%;
+    background:var(--hand);
+    z-index:5;
+}
+.hour,.minute,.second{
+    background:var(--hand);
+  position: absolute;
+  transform-origin:bottom;
+  border-radius:10px;
+  bottom:0;
+}
+.hour{
+    width:12px;
+    height:70px;
+    background:var(--hand);
+    transform:rotate(40deg);
+}
+.minute{
+    width:10px;
+    height:110px;
+    transform:rotate(300deg);
+    
+}
+.second {
+    width:5px;
+    height:130px;
+    background:var(--sec);
+    transform:rotate(180deg);
+    
+}
+button{
+    margin-top:20px;
+    border:2px solid ;
+    padding:10px;
+    border-radius:30px;
+    color:black;
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atmform.css">
+    <title>Atm card Form</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card-container">
+            <div class="front">
+             <div class="img">
+                <div class="chip"></div>
+                <div class="visa">VISA</div>
+             </div>
+                <div class="card-number-box">################</div>
+                <div class="flexbox">
+                    <div class="box">
+                        <label >card  holder</label >
+                        <div class="card-holder-name">full name</div>
+                    </div>
+                    <div class="box">
+                        <label >expires</label >
+                        <div class="expiration">
+                            <label  class="exp-month">mm</label >
+                            <label  class="exp-year">yy</label >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="stripe"></div>
+                <div class="box">
+                    <label >cvv</label >
+                    <div class="cvv-box"></div>
+                    <div class="visa">VISA</div>
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number" maxlength="16" class="card-number-input">
+            </div>
+
+            <div class="inputBox">
+                <label for="name">Card holder</label >
+                <input type="text" id="name"  class="card-holder-input">
+            </div>
+            <div class="flexbox">
+                <div class="inputBox">
+                    <label for="exp">expiration mm</label >
+                    <select name="exp" id="exp" class="month-input">
+                    <option value="month" selected disabled>month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                </div>
+
+                <div class="inputBox">
+                    <label for="exp-y">expiration yy</label >
+                    <select name="exp-y" id="exp-y" class="year-input">
+                    <option value="year" selected disabled>year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                </select>
+                </div>
+                <div class="inputBox">
+                    <label  for="cvv">cvv</label >
+                    <input type="text" id="cvv" maxlength="3" class="cvv-input">
+                </div>
+            </div>
+            <input type="submit" value="submit" class="submit-btn">
+        </form>
+    
+    <div class="home">
+        <a href="https://alli-mubarak.github.io/Init.Projects/"> Go back</a>
+    </div>
+    </div>
+    <script src="atmform.js">
+    </script>
+</body>
+</html>
